@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background{
+    width: 100vw;
+    height: 85vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ /*  align-items: center;*/
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+
+.navBar img{
+    width: 100px;
+    height: auto;
+}
+
+.navLinks{
+    display: flex;
+    gap: 1.5em;
+}
+
+.navLinks a{
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.centerContent {
+    text-align: center;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.centerContent h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+}
+
+.centerContent p{
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: black;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15em;
+    margin-bottom: 15em;
+}
+
+.buttons a{
+    padding: 1.5em 2em;
+    border: 2px solid black;
+    color: darkblue;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons a:hover{
+    background-color: white;
+    color: black;
+}
+
+.background2{
+    background-color: rgb(83, 110, 110);
+}
+
+.paragraph{
+    margin: 0 auto;
+    padding: 0 10%; /* Añade 10% de espacio en cada lado */
+    width: 80%; /* El párrafo ocupará el 80% del ancho del contenedor */
+    text-align: justify center;
+}
+
+img{
+    width: 1000px;
+}
+
