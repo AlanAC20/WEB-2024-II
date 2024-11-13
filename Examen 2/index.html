@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <style>
+        .main-container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+        }
+
+        .card {
+            padding: 5px;
+            margin: 10px;
+            width: 200px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .alta {
+            background-color: red;
+            color: white;
+        }
+        .media {
+            background-color: yellow;
+            color: black;
+        }
+        .baja {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="taskInput" placeholder="Escribe una tarea">
+        <select id="priority">
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+        <button onclick="addTask()">Agregar Tarea</button>
+        <div class="main-container" id="taskContainer"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
